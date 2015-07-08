@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/songImageViewNotify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_image"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/songNameTextViewNotify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/previousButtomNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_previous"
+                android:layout_gravity="start"/>
+
+            <!--<View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />-->
+
+            <ImageButton
+                android:id="@+id/playPauseButtomNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_pause"
+                android:layout_gravity="center"/>
+
+            <!--<View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />-->
+
+            <ImageButton
+                android:id="@+id/nextButtomNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_next"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
